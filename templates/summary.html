@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+<body>
+    <h1>Summary of Labels</h1>
+    <ul>
+        {% for item in labeled_images %}
+            <li>
+                <img src="{{ item.url }}" alt="Image" style="width:100px; height:auto; margin:10px;">
+                <p>Description: {{ item.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

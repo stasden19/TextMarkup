@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Image</title>
+</head>
+<body>
+    <h2>{{ image_url }}</h2>
+    <div>
+        <img src="{{ image_url }}" alt="Image" style="width:300px; height:auto; margin:10px;">
+    </div>
+    <form method="post">
+        <label for="description"></label>
+        <input type="text" name="description" id="description" value="{{ value }}" required autofocus>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
